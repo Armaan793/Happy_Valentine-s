@@ -1,0 +1,80 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f7f7f7;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  text-align: center;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 80%;
+  max-width: 600px;
+}
+
+h1 {
+  color: #d9534f;
+}
+
+#question-box {
+  margin: 20px 0;
+}
+
+#user-answer {
+  padding: 10px;
+  font-size: 16px;
+  width: 80%;
+  margin: 10px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+#submit-answer {
+  background-color: #d9534f;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#submit-answer:hover {
+  background-color: #c9302c;
+}
+
+#feedback-box {
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.correct-answer {
+  color: green;
+  animation: fadeIn 2s ease-out;
+}
+
+.incorrect-answer {
+  color: red;
+  animation: shake 0.5s ease-out;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@keyframes shake {
+  0% { transform: translateX(0); }
+  25% { transform: translateX(-10px); }
+  50% { transform: translateX(10px); }
+  75% { transform: translateX(-10px); }
+  100% { transform: translateX(0); }
+}
